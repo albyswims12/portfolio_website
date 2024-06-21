@@ -1,5 +1,15 @@
 @charset "UTF-8";
-
+/*!
+* Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
+* Copyright 2013-2024 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap  v5.2.3 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
 :root {
   --bs-blue: #1D809F;
   --bs-indigo: #6610f2;
@@ -236,7 +246,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -8116,7 +8126,7 @@ textarea.form-control-lg {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: #00274C !important;
+  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
@@ -10825,16 +10835,6 @@ html {
   padding-bottom: 7.5rem;
 }
 
-.content-section-project {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.content-section-about {
-  padding-top: 2.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .content-section-heading h2, .content-section-heading .h2 {
   font-size: 3rem;
 }
@@ -10954,14 +10954,28 @@ html {
 }
 
 .btn-xl {
-  padding: 1rem 1rem;
+  padding: 1.25rem 2.5rem;
+}
+
+.callout {
+  padding: 15rem 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-callout.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.callout h2, .callout .h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: block;
+  max-width: 30rem;
 }
 
 footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-.social-link {
+footer.footer .social-link {
   display: block;
   text-decoration: none;
   height: 4rem;
@@ -10972,7 +10986,7 @@ footer.footer {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-.social-link:hover {
+footer.footer .social-link:hover {
   background-color: #155d74;
   text-decoration: none;
 }
@@ -11000,7 +11014,7 @@ footer.footer {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/home-img-blue.png");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11065,9 +11079,6 @@ footer.footer {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
-
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.25s;
   }
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
@@ -11081,13 +11092,9 @@ footer.footer {
             clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 1);
+    background-color: rgba(29, 128, 159, 0.9);
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
-  }
-
-  .portfolio-item:hover .caption .caption-content {
-    opacity: 1; /* Fade in text */
   }
 }
 
@@ -11100,39 +11107,4 @@ footer.footer {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
-}
-
-.text-color-blue {
-  color: #00274C;
-}
-
-.experience-img-size {
-  width: 100%;
-  object-fit: contain;
-}
-
-.img-circle {
-  border-radius: 50%;
-  width: 25%;
-  object-fit: contain;
-  display: center;
-}
-
-.me-img{
-  border-radius: 100px;
-
-  width: 150%;
-  object-fit:contain;
-}
-
-.fade-in-text{
-  opacity: 0%;
-}
-
-.color-maize{
-  color: #FFCB05;
-}
-
-.text-big{
-  font-size: 20px;
 }
