@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Stylish Portfolio v6.0.6 (https://startbootstrap.com/theme/stylish-portfolio)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
 /*!
@@ -246,7 +246,7 @@ sup {
 
 a {
   color: var(--bs-link-color);
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: var(--bs-link-hover-color);
@@ -10835,6 +10835,16 @@ html {
   padding-bottom: 7.5rem;
 }
 
+.content-section-project {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.content-section-about {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .content-section-heading h2, .content-section-heading .h2 {
   font-size: 3rem;
 }
@@ -10975,7 +10985,7 @@ footer.footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
-footer.footer .social-link {
+.social-link {
   display: block;
   text-decoration: none;
   height: 4rem;
@@ -10986,7 +10996,7 @@ footer.footer .social-link {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-footer.footer .social-link:hover {
+.social-link:hover {
   background-color: #155d74;
   text-decoration: none;
 }
@@ -11014,7 +11024,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/home-img.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11107,4 +11117,8 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.text-color-blue {
+  color: #00274C;
 }
