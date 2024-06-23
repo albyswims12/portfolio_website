@@ -15,7 +15,7 @@ html(lang='en')
         // Google fonts
         link(href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css')
         // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        link(href='css/styles.css' rel='stylesheet')
     body#page-top
         // Navigation
         a.menu-toggle.rounded(href='#')
@@ -35,15 +35,13 @@ html(lang='en')
         // Home
         header.masthead.d-flex.align-items-center
             .container.px-4.px-lg-5.text-center.color-maize
-                img(src='/assets/icon.jpg', class='img-circle')
+                img.img-circle(src='/assets/icon.jpg')
                 h1.mb-1 Hello World! I'm Albert Cao
                 h3.mb-5
                     em Currently pursuing a Computer Science B.S.E at the University of Michigan
-                // h3(style='color:#FFCB05')
-                //     em GO BLUE!
                 a.btn.btn-primary.btn-xl.text-big(href='assets/pdfs/Albert_Cao_Resume.pdf', target='_blank') My Resume
         // About
-        section.content-section-about.bg-light#about
+        section.content-section-about.bg-light.py-4#about
             .container.px-4.px-lg-5.d-flex
                 .row.gx-4.gx-lg-5
                     .col-lg-10
@@ -52,37 +50,37 @@ html(lang='en')
                         p.lead.mb-5 The first time I discovered computer science, I found an outlet for my creativity and love for solving puzzles. While it's still that outlet for me even today, I've come to realize computer science has and will continue to shape the future. The more I dive deeper into the realm of programming, the more I realize its endless potential. Ultimately, I strive to be at the forefront of technological advancement where my ideas and work will help change lives for the better.
                         p.lead.mb-5 Away from the screen, I enjoy cooking, swimming, lifting, playing football/basketball/volleyball (basically any sport), and spending time with friends and family.
                         p.lead.mb-5 Thanks for visiting my website and learning a little bit about me! Feel free to take a look around and
-                            a(href='#contact', text-decoration='none')
-                                em contact me
+                            a(href='#contact' text-decoration='none')
+                                strong contact me
                             | whenever!
                 div
-                    img(src='/assets/img/me-img.jpg', class='me-img')
+                    img.me-img(src='/assets/img/me-img.jpg')
         // Experience
-        section.content-section.bg-primary.text-white.text-center.py-5#experience
+        section.content-section.bg-color-blue.text-white.text-center.py-5#experience
             .container.px-3
                 .content-section-heading
                     h2.mb-5 My Experience...
                 .row.justify-content-evenly.d-flex
                     .col-lg-3.col-md-6.mb-5.mb-lg-0.align-items-center
                         span
-                            img(src='/assets/img/newport-yacht-club-img.jpg', class='experience-img-size')
+                            img.experience-img-size(src='/assets/img/newport-yacht-club-img.jpg')
                         h4
                             strong Newport Yacht Club
                         p.text-faded.mb-0 Taught children ages 2-5 the basics of swimming to develop patience and teaching skills
                     .col-lg-3.col-md-6.mb-5.mb-lg-0.align-items-center
                         span
-                            img(src='/assets/img/mad4chip-img.jpg', class='experience-img-size')
+                            img.experience-img-size(src='/assets/img/mad4chip-img.jpg')
                         h4
                             strong Mad4Chip
                         p.text-faded.mb-0 Worked with low-level programming to create libraries/drivers for various microprocessors
                     .col-lg-3.col-md-6.mb-5.mb-lg-0.align-items-center
                         span
-                            img(src='/assets/img/nordstrom-rack-img.jpg', class='experience-img-size')
+                            img.experience-img-size(src='/assets/img/nordstrom-rack-img.jpg')
                         h4
                             strong Nordstrom Rack
                         p.text-faded.mb-0 Worked as apparell salesman to develop teamwork and experience the professional workforce
         // Projects
-        section.content-section-project#portfolio
+        section.content-section-project.py-4#portfolio
             .container.px-4.px-lg-5
                 .content-section-heading.text-center
                     h2.mb-5 Projects
@@ -95,7 +93,7 @@ html(lang='en')
                                     p.mb-0 Portfolio website built using HTML/CSS/React
                                     p
                                     p Click to check out the repository!
-                            img.img-fluid(src='assets/img/website-img.png', alt='...')
+                            img.img-fluid(src='assets/img/website-img.png' alt='...')
                     .col-lg-6
                         a.portfolio-item(href='mailto:cao.albert2004@gmail.com')
                             .caption
@@ -104,7 +102,7 @@ html(lang='en')
                                     p.mb-0 Instagram based client-side social media app. Built in React using Flask for backend, SQLite for database, AJAX for custom REST API.
                                     p
                                     p Click to contact me about it!
-                            img.img-fluid(src='assets/img/insta-img.jpg', alt='...')
+                            img.img-fluid(src='assets/img/insta-img.jpg' alt='...')
                     .col-lg-6
                         a.portfolio-item(href='mailto:cao.albert2004@gmail.com')
                             .caption
@@ -113,7 +111,7 @@ html(lang='en')
                                     p.mb-0 A multi-threaded program simulating a distributed MapReduce program. TCP/IP/UDP ports were used between managers/workers. Coded in Python.
                                     p
                                     p Click to contact me about it!
-                            img.img-fluid(src='assets/img/google-img.png', alt='...')
+                            img.img-fluid(src='assets/img/google-img.png' alt='...')
                     .col-lg-6
                         a.portfolio-item(href='mailto:cao.albert2004@gmail.com')
                             .caption
@@ -122,20 +120,20 @@ html(lang='en')
                                     p.mb-0 Wrote multiple assemblers and simulators for single cycle, multi cycle, and pipline processors based on the "Little Computer 2000" assembly language.
                                     p
                                     p Click to contact me about it!
-                            img.img-fluid(src='assets/img/processor-img.jpg', alt='...')
+                            img.img-fluid(src='assets/img/processor-img.jpg' alt='...')
         // Contact
-        section.content-section.bg-primary.text-white.py-4#contact
-            .container.py-4.px-4.px-lg-5.text-center
+        section.content-section.bg-color-blue.text-white.py-3#contact
+            .container.px-lg-5.text-center
                 h2.mb-4.color-maize Connect with me!
                 .list-inline.mb-5.justify-content-evenly.d-flex
                     p.list-inline-item
-                        a.social-link.rounded-circle.text-white.mr-3(href='https://www.linkedin.com/in/albert-cao-008388255/', target='_blank')
+                        a.btn.btn-primary.social-link.rounded-circle.text-white.mr-3(href='https://www.linkedin.com/in/albert-cao-008388255/' target='_blank')
                             i.icon-social-linkedin
                     p.list-inline-item
-                        a.social-link.rounded-circle.text-white.mr-3(href='mailto:cao.albert2004@gmail.com')
+                        a.btn.btn-primary.social-link.rounded-circle.text-white.mr-3(href='mailto:cao.albert2004@gmail.com')
                             i.fa-solid.fa-envelope
                     p.list-inline-item
-                        a.social-link.rounded-circle.text-white(href='https://github.com/albyswims12', target='_blank')
+                        a.btn.btn-primary.social-link.rounded-circle.text-white.mr-3(href='https://github.com/albyswims12' target='_blank')
                             i.icon-social-github
         // Footer
         footer.footer.text-center

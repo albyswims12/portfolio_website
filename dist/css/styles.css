@@ -2772,7 +2772,7 @@ textarea.form-control-lg {
   --bs-btn-font-size: 1rem;
   --bs-btn-font-weight: 400;
   --bs-btn-line-height: 1.5;
-  --bs-btn-color: #212529;
+  --bs-btn-color: #1D809F;
   --bs-btn-bg: transparent;
   --bs-btn-border-width: 1px;
   --bs-btn-border-color: transparent;
@@ -10985,7 +10985,7 @@ footer.footer .social-link:hover {
   height: auto;
   padding-top: 8rem;
   padding-bottom: 8rem;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/home-img.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/img/home-img.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11050,6 +11050,8 @@ footer.footer .social-link:hover {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
+    opacity: 0;
+    transition: opacity 0.25s;
   }
   .portfolio-item img {
     transition: -webkit-clip-path 0.25s ease-out;
@@ -11063,9 +11065,12 @@ footer.footer .social-link:hover {
             clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
+    background-color: #1d809f;
     -webkit-clip-path: inset(2rem);
             clip-path: inset(2rem);
+  }
+  .portfolio-item:hover .caption .caption-content {
+    opacity: 1;
   }
 }
 
@@ -11078,4 +11083,42 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.experience-img-size {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 25%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: center;
+}
+
+.me-img {
+  border-radius: 100px;
+  width: 150%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.fade-in-text {
+  opacity: 0%;
+}
+
+.bg-color-blue {
+  color: #fff;
+  background-color: #00274C;
+}
+
+.color-maize {
+  color: #FFCB05;
+}
+
+.text-big {
+  font-size: 20px;
 }
