@@ -11102,7 +11102,9 @@ footer.footer .social-link:hover {
 .me-img {
   border-radius: 100px;
   width: 150%;
-  margin-left: -200px;
+  position: relative;
+  left: -50px;
+  top: 20px;
   -o-object-fit: contain;
      object-fit: contain;
 }
