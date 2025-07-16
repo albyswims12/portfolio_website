@@ -10843,9 +10843,8 @@ html {
   text-transform: uppercase;
 }
 
-.content-section-about .container.d-flex {
-  gap: 10px; 
-  align-items: center;
+.content-section-about{
+  gap: 0.5rem; 
 }
 
 .text-faded {
