@@ -11106,8 +11106,7 @@ footer.footer .social-link:hover {
 
 .me-img {
   border-radius: 100px;
-  width: 150%;
-  transform: translate(-3rem, 3rem);
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
